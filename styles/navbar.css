@@ -1,0 +1,64 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar .logo{
+    display: inline-block;
+    width: 200px;
+}
+
+.navbar .logo img{
+    width: 100%;
+}
+
+.navbar .items{
+    margin-top: 30px;
+    width: 100%;
+}
+
+.navbar .item{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.navbar .item a{
+    text-decoration: none;
+    color: black;
+}
+
+.social{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social svg{
+    width: 20px;
+    height: 30px;
+    cursor: pointer;
+    align-items: center;
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .logo{
+        width: 200px;
+    }
+    .navbar .item{
+        margin: 0 10px;
+    }
+
+    .social svg{
+        margin: 0 10px;
+    }
+}
