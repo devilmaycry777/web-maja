@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAJA web</title>
+    <link rel="stylesheet" href="/styles/shows.css">
+
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+    </script>
+</head>
+
+<body>
+    <div class="navbar" id="navbar"></div>
+    <div class="container">
+        <div class="container-content">
+            <div class="image">
+                <img src="assets/ARTWORK RELEASES/flyer tour.jpg" alt="MAJA">
+            </div>
+            <div class="list">
+                <h3>Shows</h3>
+                <div class="list-item">
+                    <span>Lollapalooza 2024 -  Chicago, IL - United States</span>
+                </div>
+                <div class="list-item">
+                    <span>Primavera Sound 2024 - Barcelona - Spain</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"></div>
+</body>
+
+</html>
