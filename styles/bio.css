@@ -6,6 +6,7 @@
     width: 100vw;
     font-family: 'Roboto', sans-serif;
     font-size: 1.1rem;
+    
 }
 
 .container-content{
@@ -41,6 +42,7 @@
     height: 100%;
     margin-left: 40px;
     line-height: 1.5;
+    
 }
 
 .text p{

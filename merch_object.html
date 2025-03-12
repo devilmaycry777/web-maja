@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto - Hoodie</title>
+    <link rel="stylesheet" href="styles/merch_object.css">
+
+    <script>
+        // Cargar el navbar de manera asíncrona
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("navbar").innerHTML = data);
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer").innerHTML = data);
+
+        // Cambiar la imagen principal al hacer clic en las miniaturas
+        document.addEventListener('DOMContentLoaded', () => {
+            const thumbnails = document.querySelectorAll('.thumbnails img');
+            const mainImage = document.querySelector('.main-image img');
+
+            thumbnails.forEach(thumbnail => {
+                thumbnail.addEventListener('click', () => {
+                    const newImageSrc = thumbnail.getAttribute('src');
+                    mainImage.src = newImageSrc;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Navbar se carga aquí -->
+    <div class="navbar" id="navbar"></div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <div class="product-container">
+            <!-- Galería de Imágenes -->
+            <div class="product-gallery">
+                <div class="main-image">
+                    <img src="assets/FOTOS ESTUDIO/PHOTO OPEN WHITE.jpg" alt="Hoodie Blanco">
+                </div>
+                <div class="thumbnails">
+                    <img src="assets/FOTOS ESTUDIO/PHOTO OPEN WHITE.jpg" alt="Hoodie Blanco 1">
+                    <img src="assets/FOTOS ESTUDIO/SEMI CLOSED BLACK.jpg" alt="Hoodie Blanco 2">
+                    <img src="assets/FOTOS ESTUDIO/CLOSED HOLOGRAPHIC.jpg" alt="Hoodie Blanco 1">
+                    <img src="assets/FOTOS ESTUDIO/CUATRO.jpg" alt="Hoodie Blanco 1">
+                    <img src="assets/FOTOS ESTUDIO/MULTI CD.jpg" alt="Hoodie Blanco 2">
+                </div>
+            </div>
+
+            <!-- Información del Producto -->
+            <div class="product-info">
+                <h1>STASIS: EXPANDED EDITION CD</h1>
+                <p class="price">$29.99</p>
+                <p class="description">CD Doble Transparente, incluye STASIS EP y STASIS RE:MIXES. Podes elegir tu SIGILO favorito. Viene con postal de regalo. </p>
+                <button class="add-to-cart">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer se carga aquí -->
+    <div class="footer" id="footer"></div>
+</body>
+
+</html>

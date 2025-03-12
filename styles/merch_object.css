@@ -1,0 +1,130 @@
+/* Reset de márgenes y rellenos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* Alinea al principio */
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 100px;
+    padding-top: 40px; /* Espaciado superior */
+    text-align: center;
+}
+
+/* Contenedor de producto */
+.product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos al principio */
+    gap: 20px;
+    width: 80%;  /* Puede ajustar el ancho al que quieras */
+    max-width: 1200px;
+}
+
+/* Galería de imágenes */
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;  /* 50% de la pantalla para las imágenes */
+}
+
+.main-image {
+    width: 100%;
+    height: 100%;
+    border: 2px solid grey;  /* Ajuste del grosor del borde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px; /* Agrega espacio entre la imagen y el borde del contenedor */
+}
+
+.main-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsionarse */
+    border-radius: 10px;
+}
+
+/* Miniaturas */
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+/* Información del Producto */
+.product-info {
+    width: 45%;  /* 45% de la pantalla para el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+.product-info h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.product-info .price {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+
+.product-info .description {
+    font-size: 16px;
+    color: #555;
+}
+
+.add-to-cart {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* Navbar y Footer */
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

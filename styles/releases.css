@@ -9,6 +9,7 @@
     margin-bottom: 100px;
 }
 
+
 .container-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -22,7 +23,7 @@
 }
 
 .release{
-    border: 1px solid black;
+    border: 0.5px solid grey;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
     margin: 10px;
@@ -36,7 +37,7 @@
     cursor: pointer;
     transform: scale(1.01);
     transition: all .2s ease-in-out;
-    filter: brightness(1.3);
+    filter: brightness(1.1);
 }
 
 .release-image{
