@@ -10,3 +10,8 @@ thumbnails.forEach(thumbnail => {
         mainImage.src = newImageSrc;
     });
 });
+
+window.addEventListener('load', () => {
+    const image = document.querySelector('.release-image img');
+    image.style.visibility = 'visible';  /* Muestra la imagen */
+});
