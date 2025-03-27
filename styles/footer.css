@@ -1,21 +1,48 @@
-html, body{
-    margin: 0;
-    padding: 0;
+/* Definimos el contenedor del texto */
+.footer {
+    width: 100%;
+    height: 30px; /* Altura fija para el contenedor */
+    overflow: hidden; /* Oculta el texto fuera del contenedor */
+    position: fixed; /* Fijar el contenedor en la parte inferior */
+    bottom: 0; /* Asegura que quede en el borde inferior de la página */
+    background-color: black; /* Fondo negro */
+    padding: 0; /* Elimina todo el espaciado alrededor */
+    margin: 0; /* Elimina cualquier margen adicional */
+    text-align: left; /* Alinea el texto a la izquierda */
+    display: flex; /* Usamos flexbox para centrar verticalmente */
+    justify-content: flex-start; /* Alinea el contenido hacia la izquierda */
+    align-items: center; /* Centra verticalmente el contenido */
 }
 
-.footer{
-    width: 100%;
-    height: 30px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: 600;
+/* El texto dentro del footer */
+.footer p {
+    display: inline-block; /* Permite que el texto se mueva en una sola línea */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
     font-family: 'Roboto', sans-serif;
-    background-color: black;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    color: white; /* Color del texto blanco */
+    margin: 0; /* Elimina el margen para que no haya espacios adicionales */
+    font-weight: bold;
+    position: absolute; /* Control total sobre el movimiento */
+    left: 100%; /* Comienza fuera de la pantalla, en el borde derecho */
+    animation: scrollText 40s linear infinite; /* Animación de movimiento con la duración de 40s */
+}
+
+/* Animación para mover el texto de derecha a izquierda */
+@keyframes scrollText {
+    0% {
+        left: 100%; /* Empieza fuera de la pantalla, a la derecha */
+    }
+    100% {
+        left: -100%; /* Termina fuera de la pantalla, a la izquierda */
+    }
+}
+
+/* Ajuste para pantallas pequeñas, manteniendo la misma duración de animación */
+@media screen and (max-width: 768px) {
+    .footer p {
+        font-size: 1rem; /* Reducir el tamaño de la fuente si es necesario */
+        /* No cambiamos la animación en móviles, dejamos la misma duración */
+        animation: scrollText 40s linear infinite; /* Mantener la misma velocidad */
+    }
 }
