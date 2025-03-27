@@ -73,8 +73,9 @@
         align-items: center;
     }
     .image {
-        width: 80%;
-        min-width: 150px;  /* Mantén el tamaño mínimo de la imagen */
+        width: 80%;          /* Hace que la imagen ocupe el 80% */
+        min-width: 150px;    /* Mantén el tamaño mínimo de la imagen */
+        margin-bottom: 20px; /* Añadimos espacio debajo de la imagen */
     }
     .text {
         width: 80%;       /* Hace que el texto ocupe el 80% */
@@ -98,8 +99,9 @@
         align-items: center;
     }
     .image {
-        width: 80%;
-        min-width: 150px;
+        width: 90%;          /* Hace que la imagen ocupe el 90% */
+        min-width: 200px;    /* Mantén el tamaño mínimo de la imagen */
+        margin-bottom: 20px; /* Añadimos espacio debajo de la imagen */
     }
     .text {
         width: 100%;       /* Asegura que el texto ocupe todo el ancho */
