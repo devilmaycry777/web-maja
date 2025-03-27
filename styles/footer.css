@@ -45,7 +45,7 @@
     .footer p {
         font-size: 1rem; /* Reducir el tamaño de la fuente si es necesario */
         /* No cambiamos la animación en móviles, dejamos la misma duración */
-        animation: scrollText 40s linear infinite; /* Mantener la misma velocidad */
+        animation: scrollText 150s linear infinite; /* Mantener la misma velocidad */
     }
 }
 
