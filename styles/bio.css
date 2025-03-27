@@ -89,7 +89,7 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: 100%;
+        width: 95%;
         flex-direction: column;
         height: auto;
     }
@@ -99,7 +99,7 @@
         align-items: center;
     }
     .image {
-        width: 100%;          /* La imagen ocupa el 100% del contenedor en móvil */
+        width: 90%;          /* La imagen ocupa el 100% del contenedor en móvil */
         min-width: 150px;     /* Tamaño mínimo de la imagen */
         margin-bottom: 20px;  /* Espacio debajo de la imagen */
     }
